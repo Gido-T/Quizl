@@ -3,24 +3,28 @@ html {
     width: 100%;
     font-family: 'Varela Round';
     color: white;
-    background: url('QuizlLogo.png');
 }
 
 body {
     padding: 0;
     margin: 0;
+    padding-block-end: 0%;
+
+    h1 {
+        border-bottom: solid;
+        width: 70%;
+    }
 }
 
 #nav-bar ul {
     height: 50px;
     padding: 0;
     margin: 0;
-    border-bottom: solid;
-    border-width: 0.5px;
-    border-color: black;
-    background-color: white;
+    background-color: #2F2F2F;
     overflow: hidden;
     list-style-type: none;
+    border-bottom: solid;
+    border-color: black;
 
     li {
         display: inline-block;
@@ -48,24 +52,13 @@ body {
     }
 }
 
-#content {
-    width: 80%;
-    padding: 40px;
-
-    
-    h1 {
-        border-bottom: solid;
-        width: 70%;
-    }
-}
 
 #about {
+    background: url('Background.png');
+    height: 1000px;
     padding: 20px;
-    border: dotted;
 
     #about-words {
-        background: linear-gradient(to bottom, #39194F 20%, #210B2F 50%);
-        box-sizing: border-box;
         padding: 20px;
         width: 600px;
         height: 600px;
@@ -75,13 +68,38 @@ body {
         border-bottom-right-radius: 5%;
     }
 
-    #about-image {
-        border: solid;
-        border-color: black;
-        width: 600px;
-        height: 600px;
-        background-color: white;
-        border-radius: 20%;
-        border-bottom-right-radius: 5%;
+    
+}
+div.image {
+    overflow: hidden;
+    width: 600px;
+    height: 600px;
+    border-radius: 5%;
+    border-bottom-right-radius: 1%;
+
+    img {
+        width: 100%;
     }
 }
+
+#assurance {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: #2F2F2F;
+    height: 1000px;
+
+    div.image {
+        float: right;
+    }
+}
+
+#tutorial {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: black;
+    height: 1000px;
+}
+
+
