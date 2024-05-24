@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Varela Round';
+    color: white;
+    background-color: #613A93;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#nav-bar ul {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border-bottom: solid;
+    border-width: 0.5px;
+    border-color: black;
+    background-color: white;
+    overflow: hidden;
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+    }
+
+    li input {
+        box-sizing: border-box;
+        padding: 5px 4px;
+
+        height: 100%;
+        width: 100px;
+        display: block;
+    }
+
+    li a {
+        box-sizing: border-box;
+        float: left;
+        background-color: #8A8A8A;
+        text-align: center;
+        padding: 14px 16px;
+        display: block;
+        text-decoration: none;
+        height: 100%;
+        width: 100px;
+    }
+}
+
+#content {
+    width: 80%;
+    padding: 40px;
+
+    
+    h1 {
+        border-bottom: solid;
+        width: 70%;
+    }
+}
+
+#about {
+    padding: 20px;
+    border: dotted;
+
+    #about-words {
+        background: linear-gradient(to bottom, #39194F 20%, #210B2F 50%);
+        box-sizing: border-box;
+        padding: 20px;
+        width: 600px;
+        height: 600px;
+        float: right;
+        border-radius: 15%;
+        border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%;
+    }
+
+    #about-image {
+        border: solid;
+        border-color: black;
+        width: 600px;
+        height: 600px;
+        background-color: white;
+        border-radius: 20%;
+        border-bottom-right-radius: 5%;
+    }
+}
