@@ -75,6 +75,7 @@ div.image {
     width: 600px;
     height: 600px;
     border-radius: 5%;
+    background-color: black;
     border-bottom-right-radius: 1%;
 
     img {
