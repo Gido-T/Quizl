@@ -3,7 +3,7 @@ html {
     width: 100%;
     font-family: 'Varela Round';
     color: white;
-    background-color: #613A93;
+    background: url('QuizlLogo.png');
 }
 
 body {
