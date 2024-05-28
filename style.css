@@ -8,6 +8,7 @@ html {
 body {
     padding: 0;
     margin: 0;
+    overflow: hidden;
     padding-block-end: 0%;
 
     h1 {
@@ -17,7 +18,7 @@ body {
 }
 
 #nav-bar ul {
-    height: 50px;
+    height: 10vh;
     padding: 0;
     margin: 0;
     background-color: #2F2F2F;
@@ -28,28 +29,44 @@ body {
 
     li {
         display: inline-block;
+        height: 100%;
     }
 
     li input {
         box-sizing: border-box;
-        padding: 5px 4px;
-
         height: 100%;
-        width: 100px;
         display: block;
+        padding: 10px;
     }
 
     li a {
+        padding: 10px;
         box-sizing: border-box;
         float: left;
         background-color: #8A8A8A;
-        text-align: center;
-        padding: 14px 16px;
         display: block;
         text-decoration: none;
+        text-align: center;
+        line-height: normal;
         height: 100%;
-        width: 100px;
+        width: 200px;
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
     }
+    a:hover {
+        color: black;
+    }
+}
+
+#content {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    height: 90vh;
 }
 
 
@@ -70,29 +87,15 @@ body {
 
     
 }
-div.image {
-    overflow: hidden;
-    width: 600px;
-    height: 600px;
-    border-radius: 5%;
-    background-color: black;
-    border-bottom-right-radius: 1%;
 
-    img {
-        width: 100%;
-    }
-}
-
+/*Fix Divider Img there is a 1 pixel height drop between divider and image*/
 #assurance {
     overflow: hidden;
     box-sizing: border-box;
     padding: 40px;
+    background: url(Divider.png) no-repeat;
     background-color: #2F2F2F;
     height: 1000px;
-
-    div.image {
-        float: right;
-    }
 }
 
 #tutorial {
