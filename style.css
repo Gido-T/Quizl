@@ -13,7 +13,7 @@ body {
 
     h1 {
         border-bottom: solid;
-        width: 70%;
+        width: 50%;
     }
 }
 
@@ -83,21 +83,20 @@ body {
         border-radius: 15%;
         border-top-right-radius: 5%;
         border-bottom-right-radius: 5%;
-    }
-
-    
+    }   
 }
 
 /*Fix Divider Img there is a 1 pixel height drop between divider and image*/
-#assurance {
-    overflow: hidden;
+#assurance-words {
+    z-index: 1;
     box-sizing: border-box;
     padding: 40px;
-    background: url(Divider.png) no-repeat;
-    background-color: #2F2F2F;
+    background-image: url('Divider.png'), url('Github.png');
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    background-position: right bottom, 350% top;
     height: 1000px;
 }
-
 #tutorial {
     overflow: hidden;
     box-sizing: border-box;
