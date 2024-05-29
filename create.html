@@ -7,7 +7,7 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
         <link href="create.css" rel="stylesheet" type="text/css" />
         <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
-        <script src="script.js"></script>
+        
     </head>
     <body>
         <div id="nav-bar">
@@ -21,14 +21,22 @@
 
         <div id="content">
             <div id='about'>
+                <p>CSV should be in the format [Question, Answer]. More ways hopefully added soon. Might replace with a csv parser library if I figure out how to do so. I have to make this pretty quick because I'm low on time so I don't ahve time to figure it out.</p>
+
                 <div id="textbox">
-                    <textarea></textarea>
+                    <textarea id="text"></textarea>
 
                     <br>
-                    <button>Create!</button>
+                    <button id="createBtn">Create!</button>
                 </div>
+                <span></span>
                 
+                <div id="set-area">
+                    <input type="text" placeholder="Name your set">
+                </div>
             </div>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
