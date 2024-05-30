@@ -3,26 +3,102 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Game</title>
+        <title>Learn</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
         <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
     </head>
 
     <body>
+      <style>
+        body {
+          	background: url(Background.png);
+        }
+
+		#query {
+			margin: auto;
+		}
+
+        #content {
+			text-align: center;
+          	width: 70%;
+          	height: 800px;
+          	margin: auto;
+			overflow: hidden;
+        }
+		table {
+			height: 60vh;
+			width: 100%;
+		}
+		.question {
+			font-size: 100%;
+			border: none;
+			border-radius: 20px;
+			height: 90%;
+			width: 100%;
+		}
+
+		.question:hover {
+			background-color: grey;
+		}
+
+		.question:active {
+			background-color: white;
+		}
+
+		#start-button {
+			font-size: 100%;
+			border: none;
+			border-radius: 20px;
+			width: 250px;
+			height: 100px;
+			background-color: grey;
+		}
+
+		#start-button:hover {
+			background-color: white;
+		}
+
+		#start-button:active {
+			background-color: grey;
+		}
+
+		
+      </style>
+      <div id="nav-bar">
+        <ul>
+            <li id="logo"><input type="image" src="QuizlLogo.png"></li>
+            <li>
+                <a href="./create.html"><span>Create A Quizl</span></a>
+            </li>
+            <li>
+                <a href="./learn.html">Learn!</a>
+            </li>
+        </ul>
+    </div>
         <div id="content">
-            <h1 id="query"></h1><br>
-            <div>
+            <h1 id="query">Words</h1><br>
                 <table>
                   <tr>
-                    <button id="question1"></button>
-                    <button id="question2"></button>
+					<td><button class="question" id="question1">1</button></td>
+                    <td><button class="question" id="question2">2</button></td>
                   </tr>
                   <tr>
-                    <button id="question3"></button>
-                    <button id="question4"></button>
+					<td><button class="question" id="question3">3</button></td>
+                    <td><button class="question" id="question4">4</button></td>
+                    
                   </tr>
                 </table>
-            </div>
+				<button id="start-button">Start!</button>
         </div>
+
+		
         <script src="script.js"></script>
     </body>
+
+	<script>
+        let logo = document.getElementById('logo');
+        logo.onclick = function() {
+            location.href = './index.html';
+        }
+    </script>
 </html>
