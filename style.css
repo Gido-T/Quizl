@@ -43,22 +43,34 @@ body {
         padding: 10px;
         box-sizing: border-box;
         float: left;
-        background-color: #8A8A8A;
         display: block;
         text-decoration: none;
         text-align: center;
-        line-height: normal;
         height: 100%;
+        line-height: 100%;
         width: 200px;
 
         span {
+            font-size: 2em;
             display: inline-block;
             vertical-align: middle;
             line-height: normal;
         }
     }
     a:hover {
-        color: black;
+        background-color: black;
+    }
+
+    a:active {
+        color: #1e6c9b;
+    }
+
+    a:link {
+        color: #1e6c9b;
+    }
+
+    a:visited {
+        color: #1e6c9b;
     }
 }
 

@@ -1,6 +1,10 @@
 let text = document.getElementById('text');
 let createButton = document.getElementById('createBtn');
 let setArea = document.getElementById('set-area');
+let questionElements = [];
+
+let queryButtons = document.getElementsByClassName('question');
+let words = document.getElementById('query');
 
 function createQuestion(query, answer) {
     let question = document.createElement('div');
@@ -32,10 +36,12 @@ createButton.onclick = function() {
 
      // TODO: Make CSV parsing better
     for(let i = 0; i < questions.length; i++) {
-        const question = questions[i].split(',');
+        const QUESTION = questions[i].split(',');
 
-        let questionElement = createQuestion(question[0], question[1])
+        let questionElement = createQuestion(QUESTION[0], QUESTION[1])
+        questionElements[i] = questionElement;
         console.log(questionElement);
         setArea.append(questionElement);
+        setArea.append(document.createElement('br'));
     }
 }

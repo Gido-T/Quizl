@@ -71,7 +71,7 @@
                 <a href="./create.html"><span>Create A Quizl</span></a>
             </li>
             <li>
-                <a href="./learn.html">Learn!</a>
+                <a href="./learn.html"><span>Learn!</span></a>
             </li>
         </ul>
     </div>
@@ -97,8 +97,19 @@
 
 	<script>
         let logo = document.getElementById('logo');
+		let start = document.getElementById('start-button');
+
+
         logo.onclick = function() {
             location.href = './index.html';
         }
+
+		start.onclick = function() {
+   			let i = 0;
+
+    		let correct = questionsElements[i];
+    
+    		words.textContent = correct.query;
+		}
     </script>
 </html>
